@@ -32,3 +32,12 @@ docker container run -it --name proxy nginx bash # create container and terminal
 exit # exit bash from terminal
 docker container run -it -name ubuntu ubuntu
 docker container start -ai ubuntu
+docker container port webhost # show all busy port on container
+docker network ls -> show networks
+docker network inspect -> inspect network
+docker network inspect -> inspect network
+docker network create ${name} -> inspect network
+docker network connect ${network} ${container} -> connect network to container
+docker network disconnect ${network} ${container} -> disconnect network to container
+docker container run -d --name new_nginx --network my_app_net nginx
+docker container run -rm -it ubuntu:14.04 bash 
