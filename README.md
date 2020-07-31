@@ -41,3 +41,5 @@ docker network connect ${network} ${container} -> connect network to container
 docker network disconnect ${network} ${container} -> disconnect network to container
 docker container run -d --name new_nginx --network my_app_net nginx
 docker container run -rm -it ubuntu:14.04 bash 
+docker pull nginx
+docker pull nginx:1.11.9
