@@ -49,3 +49,6 @@ docker login # use to upload image
 docker logout # logout
 docker volume ls
 docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql # run container with special volume
+docker-compose up
+docker-compose up -d
+docker-compose down
