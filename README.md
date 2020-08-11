@@ -52,3 +52,11 @@ docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql
 docker-compose up
 docker-compose up -d
 docker-compose down
+docker swarm init
+docker services ls # show all services in swarm manager
+docker node ls
+docker service ps ${name}
+docker service create alpine ping 8.8.8.8
+docker service update ${id} --replicas 3 # update 
+docker swarm join \ ${token}
+docker service rm intelligent_babbage
